@@ -22,7 +22,7 @@ welcome.blade.php y checkout.blade.php disponibles en resources\views
 La API al desarrollarse para un uso web interno de la aplicacion, realiza las redirecciones aunque podriamos realizar un proceso intermedio que llamara a la API, el cual en funcion de la respuesta, decidiera lo que hacer (para poder gestionar outputs en base a distintos errores).
 Pero por simplicidad se ha decidido dejarlo asi.
 <br>
-## Resumen: <br>
+**Resumen:** <br>
 A modo resumen, para cambiar el funcionamiento de la API de gestion del carrito habria que modificar unicamente dos ficheros:
 - app\Http\Controllers\Api\V1\CartController.php -> Controlador con los metodos a los que se puede llamar para gestionar el carrito dentro de la sesion de usuario.
 - routes\api.php -> las rutas con las llamadas a los metodos del controlador.
