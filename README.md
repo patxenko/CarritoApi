@@ -20,7 +20,7 @@ database\seeders\ProductoSeeder.php <br>
 welcome.blade.php y checkout.blade.php disponibles en resources\views
 <br><br>
 La API al desarrollarse para un uso web interno de la aplicacion, realiza las redirecciones aunque podriamos realizar un proceso intermedio que llamara a la API, el cual en funcion de la respuesta, decidiera lo que hacer (para poder gestionar outputs en base a distintos errores).
-Pero por simplicidad se ha decidido dejarlo asi. <br><br>
+Pero por simplicidad se ha decidido dejar asi. <br><br>
 
 **Resumen:** <br>
 A modo resumen, para cambiar el funcionamiento de la API de gestion del carrito habria que modificar unicamente dos ficheros:
