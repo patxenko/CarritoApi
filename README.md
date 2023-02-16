@@ -17,11 +17,12 @@ database\seeders\ProductoSeeder.php <br>
 - Se han creado las rutas a la API interna que se empleara durante la navegacion web disponibles en routes\api.php<br>
 - Se ha creado el controlador que gestionara dichas peticiones para el carrito en app\Http\Controllers\Api\V1\CartController.php el cual gestiona cada una de las peticiones a la API. <br>
 - Por otro lado para testear el funcionamiento interno se han creado las vistas oportunas basicas para simular la navegacion de un usuario dentro de la web
-welcome.blade.php y checkout.blade.php disponibles en resources\views <br>
+welcome.blade.php y checkout.blade.php disponibles en resources\views
 <br><br>
 La API al desarrollarse para un uso web interno de la aplicacion, realiza las redirecciones aunque podriamos realizar un proceso intermedio que llamara a la API, el cual en funcion de la respuesta, decidiera lo que hacer (para poder gestionar outputs en base a distintos errores).
 Pero por simplicidad se ha decidido dejarlo asi.
-
+<br>
+###### Resumen:
 A modo resumen, para cambiar el funcionamiento de la API de gestion del carrito habria que modificar unicamente dos ficheros:
 - app\Http\Controllers\Api\V1\CartController.php -> Controlador con los metodos a los que se puede llamar para gestionar el carrito dentro de la sesion de usuario.
 - routes\api.php -> las rutas con las llamadas a los metodos del controlador.
